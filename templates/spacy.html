@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+    <link rel="stylesheet"  href="/static/style.css">
+    
+    <nav class="nvba">
+        <div class="nvb">
+                <li><a href="/">NLTK</a></li>
+                <li><a href="/textblob/">TEXTBLOB</a></li>
+                <li><a href="/spacy/">SPACY</a></li>
+        </div>
+    </nav>
+    <title>NLP Tutorial</title>
+</head>
+<body>
+
+    
+    <form action="/spacyy" method="post">
+        <div> <h1>Spacy</h1> <p> spaCy stands out as a powerful and efficient natural language processing (NLP) library for Python, tailored for robust text analysis in real-world applications. Notable for its industrial-strength capabilities, spaCy delivers high performance and accuracy in tasks such as tokenization and linguistic annotations. The library provides pre-trained models for multiple languages, facilitating tasks like part-of-speech tagging, named entity recognition (NER), and syntactic parsing. Particularly adept at NER, spaCy excels in identifying entities within text, including persons, organizations, and locations. Additionally, spaCy incorporates word embeddings, offering access to pre-trained word vectors that capture semantic relationships. Its dependency parsing capability provides insights into grammatical structures. SpaCy boasts an extensible design, allowing users to integrate custom models or components. Known for its user-friendly API and a growing community, spaCy is open-source and distributed under the MIT license, making it a preferred choice for both research and production environments in the field of natural language processing.</p></div>
+        <div> <h2>1. Tokenization</h2>
+        <p>During processing, spaCy first tokenizes the text, i.e. segments it into words, punctuation and so on. This is done by applying rules specific to each language. For example, punctuation at the end of a sentence should be split off – whereas “U.K.” should remain one token.  Each *Doc* consists of individual tokens, and we can iterate over them:</p>
+        <label for='user13_input'>Enter a sentence:</label><input type="text" name='user13_input'>
+        <input type="submit" value="Get Output">   <a href="{{ url_for('user13_html') }}" id="viewCodeButton">View Code</a> </div>
+
+        <div> <h2>2. POS Tagging (parts of speech)</h2>
+            <p>After tokenization, spaCy can parse and tag a given *Doc*. This is where the statistical model comes in, which enables spaCy to make a prediction of which tag or label most likely applies in this context. A model consists of binary data and is produced by showing a system enough examples for it to make predictions that generalize across the language – for example, a word following “the” in English is most likely a noun.</p>
+            <label for='user14_input'>Enter a sentence:</label><input type="text" name='user14_input'>
+            <input type="submit" value="Get Output">   <a href="{{ url_for('user14_html') }}" id="viewCodeButton">View Code</a> </div>
+
+        <div> <h2>3. Words Vector and Similarity (Word2Vec)</h2>
+            <p>Similarity is determined by comparing word vectors or “word embeddings”, multi-dimensional meaning representations of a word.Word vectors can be generated using an algorithm like word2vec and usually look like this:</p>
+            <label for='user15a_input'>Enter a sentence:</label><input type="text" name='user15a_input'>
+            <label for='user15b_input'>Enter a sentence:</label><input type="text" name='user15b_input'>
+            <input type="submit" value="Get Output">   <a href="{{ url_for('user15_html') }}" id="viewCodeButton">View Code</a></div>
+
+        <div> <h2>4. Name Entity Recognization</h2>
+            <p>In spaCy, NER stands for Named Entity Recognition. Named Entity Recognition is a natural language processing (NLP) technique that identifies and classifies named entities in text into predefined categories. Named entities are words or phrases that represent specific types of objects, such as persons, organizations, locations, date expressions, monetary values, percentages, etc.</p>
+            <label for='user16_input'>Enter a sentence:</label><input type="text" name='user16_input'>
+            <input type="submit" value="Get Output">   <a href="{{ url_for('user16_html') }}" id="viewCodeButton">View Code</a> </div><br><br>
+            <br>
+            <br>
+
+    </form>
+
+
+
+
+
+
+
+
+    </form>
+</body>
+</html>

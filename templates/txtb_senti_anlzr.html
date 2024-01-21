@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Form</title>
+</head>
+<body>
+    <h1>code</h1>
+    <p>
+        from textblob import TextBlob<br> 
+        from textblob.sentiments import NaiveBayesAnalyzer <br>
+        def get_sentiment(text):<br>
+        &nbsp;&nbsp; blob1 = TextBlob(text, analyzer=NaiveBayesAnalyzer())<br>
+        &nbsp;&nbsp; sentiment = blob1.sentiment <br>
+        &nbsp;&nbsp; return sentiment<br> 
+        
+
+        input_text ="I love using TextBlob for sentiment analysis. It's great!"<br>
+        output_sentiment = get_sentiment(input_text)<br>
+        print(f"Input Text: {input_text}")<br>
+        print(f"Sentiment: {output_sentiment.classification} (Positive: {output_sentiment.p_pos}, Negative: {output_sentiment.p_neg})")<br>
+
+     </p>
+    <br>
+
+    <h4>output:</h4><p>Input Text: I love using TextBlob for sentiment analysis. It's great!<br>
+        Sentiment: pos (Positive: 0.9999999071097168, Negative: 9.289028813454466e-08)
+        </p>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+    <link rel="stylesheet"  href="/static/style.css">
+    
+    <nav class="nvba">
+        <div class="nvb">
+                <li><a href="/">NLTK</a></li>
+                <li><a href="/textblob/">TEXTBLOB</a></li>
+                <li><a href="/spacy/">SPACY</a></li>
+        </div>
+    </nav>
+    <title>NLP Tutorial</title>
+</head>
+<body>
+
+    
+    <form action="/textblobs" method="post">
+        <div><h1> TextBlob</h1> <p> TextBlob is a Python library designed to simplify natural language processing (NLP) tasks by providing a straightforward and user-friendly API. Developed on top of NLTK and Pattern, TextBlob aims to make it easy for users to perform various text analysis tasks without extensive knowledge of linguistic concepts or complex programming.
+
+            The library offers a range of NLP functionalities, including part-of-speech tagging, noun phrase extraction, sentiment analysis, classification, translation, and language detection. One notable feature is its built-in sentiment analysis capabilities, providing a sentiment polarity score that indicates the positivity or negativity of a given text. It can also perform advanced sentiment analysis using machine learning classifiers such as the Naive Bayes classifier.</p></div>
+        <div> <h2>1. Text Correction</h2>
+        <p>This is one of the unique features of the TextBlob library. With the correct method of the TextBlob object, you can correct all the spelling mistakes in your text.</p>
+        <label for='user17_input'>Enter a sentence:</label><input type="text" name='user17_input'>
+        <input type="submit" value="Get Output">   <a href="{{ url_for('user17_html') }}" id="viewCodeButton">View Code</a> </div>
+
+        <div> <h2>2. Language Translation</h2>
+            <p>Another powerful feature of the TextBlob library is to translate from one language to another.On the backend, the TextBlob language translator uses the Google Translate API. We use the translation method for this purpose.The language that you want your text to be translated to is passed as a parameter to the method.</p>
+            <label for='user18a_input'>Enter a sentence:</label><input type="text" name='user18a_input'>
+            <label for='user18b_input'>translate to,use code french=fr, German=de, russian=ru </label><input type="text" name='user18b_input'>
+            <input type="submit" value="Get Output">   <a href="{{ url_for('user18_html') }}" id="viewCodeButton">View Code</a>  </div>
+
+        <div> <h2>3. Text Sentiment Analyzer</h2>
+            <p>Sentiment analysis, also referred to as opinion mining, is an approach to natural language processing (NLP) that identifies the emotional tone behind a body of text.This is a popular way for organizations to determine and categorize opinions about a product, service, or idea. We use the textblob's NaiveBayesAnalyzer for this purpose.</p>
+            <label for='user19_input'>Enter a sentence:</label><input type="text" name='user19_input'>
+            <input type="submit" value="Get Output">   <a href="{{ url_for('user19_html') }}" id="viewCodeButton">View Code</a>  </div>
+
+        
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

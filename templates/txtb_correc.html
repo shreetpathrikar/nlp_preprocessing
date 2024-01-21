@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Form</title>
+</head>
+<body>
+    <h1>code</h1>
+    <p>
+        from textblob import TextBlob<br> 
+        def correct_text(input_text): <br>
+        &nbsp;&nbsp;&nbsp; text = text_blob = TextBlob(input_text) <br>
+        &nbsp;&nbsp;&nbsp; doc =  corrected_words = [word.correct() for word in text_blob.words]<br> 
+        &nbsp;&nbsp;&nbsp; corrected_text = " ".join(corrected_words) <br>
+        &nbsp;&nbsp;  return corrected_text <br>
+        input_text = "Thsi is an exmple of incorret text."<br>
+        output_text = correct_text(input_text) <br>
+        print(f"Input Text: {input_text}")<br>
+        print(f"Corrected Text: {output_text}")<br>
+
+     </p>
+    <br>
+
+    <h4>output:</h4><p>Input Text: Thsi is an exmple of incorret text.<br>
+        Corrected Text: This is an example of incorrect text.
+        .</p>
+
+
+
+
+
+</body>
+</html>

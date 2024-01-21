@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Form</title>
+</head>
+<body>
+    <h1>code</h1>
+    <p>
+        from textblob import TextBlob<br> 
+        from textblob.translate import Translator <br>
+        def translate_text(text, target_language):<br>
+        &nbsp;&nbsp; try <br>
+        &nbsp;&nbsp;&nbsp; translator = Translator() <br>
+        &nbsp;&nbsp;&nbsp; translated_text = translator.translate(text, from_lang='en', to=target_language)<br> 
+        &nbsp;&nbsp;&nbsp; return translated_text <br>
+        &nbsp;&nbsp;except Exception as e: <br>
+        &nbsp;&nbsp;&nbsp; print(f"Error during translation: {e}")<br>
+        &nbsp;&nbsp;&nbsp; return none <br>
+
+        input_text ="Hello, how are you?"<br>
+        target_language = "es"    #for spanish <br>
+        output_text = translate_text(input_text, target_language)<br>
+        print(f"Input Text: {input_text})<br>
+        print(f"Translated Text: {output_text}")<br>
+
+     </p>
+    <br>
+
+    <h4>output:</h4><p>Input Text: Hello, how are you?<br>
+        Translated Text: Hola, ¿cómo estás?
+        
+        .</p>
+
+
+
+
+
+</body>
+</html>
+

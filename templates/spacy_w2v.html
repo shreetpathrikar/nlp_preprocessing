@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Form</title>
+</head>
+<body>
+    <h1>code</h1>
+    <p> import spacy<br> 
+        nlp = spacy.load("en_core_web_sm") <br>
+        def word_similarity(word1, word2): <br>
+        &nbsp;&nbsp;&nbsp; token1 = nlp1(word1)<br> 
+        &nbsp;&nbsp;&nbsp; token2 = nlp1(word2) <br>
+        &nbsp;&nbsp;&nbsp; if token1.has_vector and token2.has_vector:
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; similarity = token1.similarity(token2)
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return similarity
+        &nbsp;&nbsp;&nbsp; else:
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return None<br>
+        word1 = "cat"<br>
+        word2 = "dog" <br>
+        output_similarity = word_similarity(word1, word2)<br>
+        print(f"Similarity between '{word1}' and '{word2}': {output_similarity}")<br>
+      
+     </p>
+    <br>
+
+    <h4>output:</h4><p>Similarity between 'cat' and 'dog': 0.8
+        </p>
+
+
+
+
+
+</body>
+</html>
